@@ -40,7 +40,7 @@ function renderCoffees(coffees) {
 
 // exports data into DIV of HTML
 var coffeeDiv = document.querySelector('#coffees');
-coffeeDiv.innerHTML = renderCoffees(coffees);
+coffeeDiv.innerHTML = renderCoffees(coffees)
 
 
 // update coffee list
@@ -59,9 +59,9 @@ function updateCoffees(e) {
     coffeeDiv.innerHTML = renderCoffees(filteredCoffees);
 }
 
-
 // updates filtered coffee array as input is registered to search-bar
-function updateCoffeeSearch(){
+function updateCoffeeSearch(e){
+    e.preventDefault();
     var searchValue = searchEntry.value.toUpperCase()
     var filteredCoffees = [];
     // console.log(searchValue);
@@ -73,47 +73,23 @@ function updateCoffeeSearch(){
     coffeeDiv.innerHTML = renderCoffees(filteredCoffees);
 }
 
-//local storage shiiiiiittttt
-// var inputRoast = document.querySelector('#coffee-strength');
-// var inputName = document.querySelector('#coffee-name');
-// var addCoffeeBtn = document.querySelector('#add-coffee-submit');
-// addCoffeeBtn.addEventListener('click', addCoffee);
-//
-// function addCoffee(coffee) {
-//     var id = coffees.length + 1;
-//     var addName = inputName.value;
-//     var addRoast = inputRoast.value;
-//     coffee = {id: id, name: addName, roast: addRoast};
-//     coffees.push(coffee);
-//     coffeeDiv.innerHTML = renderCoffees(filteredCoffees);
-// }
+//local storage
+var inputRoast = document.querySelector('#coffee-strength');
+var inputName = document.querySelector('#coffee-name');
+var addCoffeeBtn = document.querySelector('#add-coffee-submit');
+addCoffeeBtn.addEventListener('click', addCoffee)
 
-// var roastKey = document.getElementById('coffee-strength');
-// var roastValue = document.querySelector('#coffee-strength');
-// var nameKey = document.getElementById('coffee-name');
-// var nameValue = document.querySelector('#coffee-name')
-// var btnInsert = document.getElementById('add-coffee-submit');
-//
-// btnInsert.onclick = function() {
-//     var keyOne = roastKey;
-//     var valueOne = roastValue;
-//     var keyTwo = nameKey;
-//     var valueTwo = nameValue;
-//     console.log(keyOne);
-//     console.log(keyTwo);
-//     console.log(valueOne);
-//     console.log(valueTwo);
-//     if ((keyOne && valueOne) || (keyTwo && valueTwo)){
-//         localStorage.setItem(key, value);
-//         location.reload();
-//     }
-// }
-// for (var i = 0; i < localStorage.length; i++){
-//     var keyOne = localStorage.key(i);
-//     var valueOne = localStorage.getItem(keyOne);
-//     var keyTwo = localStorage.key(i);
-//     var valueTwo = localStorage.getItem(keyTwo);
-// }
+
+function addCoffee(e) {
+    e.preventDefault();
+    var id = coffees.length + 1;
+    var addName = inputName.value;
+    var addRoast = inputRoast.value;
+    var coffee = {id: id, name: addName, roast: addRoast};
+    coffees.push(coffee);
+    console.log(coffees);
+    coffeeDiv.innerHTML = renderCoffees(coffees);
+}
 
 // this works
 var submitButton = document.querySelector('#submit');
