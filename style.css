@@ -1,6 +1,6 @@
 body{
 font-family: kiwi maru,serif;
-    background-image: url("https://previews.123rf.com/images/bigio/bigio1507/bigio150700002/43273568-coffee-shop-design-seamless-background-stylized-coffee-pattern-vector-.jpg");
+    background-image: url("https://mk-website-media.s3.amazonaws.com/wp-content/uploads/2018/10/18235411/Wallpaper-Kemra-YoCoffee-1.jpg");
     background-size: auto;
 }
 .jumbotron-fluid{
@@ -19,14 +19,15 @@ p.lead{
 }
 .coffee-div{
     background-color: burlywood;
-    margin-bottom: 3em;
-    opacity: .8;
+
+    opacity: .9;
     text-decoration-color: black;
 
+
 }
-
-div.row{
-
+.card{
+    background-image: url("https://www.10wallpaper.com/wallpaper/1366x768/1511/Coffee_Drink_Food_Theme_HD_Desktop_Wallpaper_16_1366x768.jpg");
+    background-size: cover;
 }
 
 .navbar{
@@ -40,9 +41,22 @@ div.row{
 }
 .add-coffee-search{
     background-color: black;
-    opacity:.8;
+
     height:14em;
 }
 .add-coffee{
 
+}
+.label-add-coffee{
+    margin-right:-3px;
+
+}
+.label-choose-coffee{
+    margin-right:-3px;
+}
+.search-input-add-coffee{
+    border:1px solid black;
+}
+.search-input-pick-coffee{
+    border: 1px solid black;
 }
