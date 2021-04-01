@@ -1,0 +1,48 @@
+body{
+font-family: kiwi maru,serif;
+    background-image: url("https://previews.123rf.com/images/bigio/bigio1507/bigio150700002/43273568-coffee-shop-design-seamless-background-stylized-coffee-pattern-vector-.jpg");
+    background-size: auto;
+}
+.jumbotron-fluid{
+    margin:0;
+    background-image: url("https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80");
+    background-size:contain;
+}
+
+h1.display-4{
+    color: white;
+}
+
+p.lead{
+    color: white;
+    text-align: center;
+}
+.coffee-div{
+    background-color: burlywood;
+    margin-bottom: 3em;
+    opacity: .8;
+    text-decoration-color: black;
+
+}
+
+div.row{
+
+}
+
+.navbar{
+    border-radius: 5%;
+}
+
+.back-to-top{
+
+    /*background-image: url("https://previews.123rf.com/images/bigio/bigio1507/bigio150700002/43273568-coffee-shop-design-seamless-background-stylized-coffee-pattern-vector-.jpg");*/
+
+}
+.add-coffee-search{
+    background-color: black;
+    opacity:.8;
+    height:14em;
+}
+.add-coffee{
+
+}
